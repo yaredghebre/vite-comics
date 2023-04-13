@@ -131,7 +131,7 @@ export default {
                     </ul>
                 </li>
             </ul>
-            <img class="call-to-action-logo" src="../assets/img/dc-logo-bg.png" alt="">
+            <img class="call-to-action-container-logo" src="../assets/img/dc-logo-bg.png" alt="">
         </div>
     </section>
 </template>
@@ -141,11 +141,10 @@ export default {
 @use "../style/partials/variables" as *;
 
     .call-to-action {
-        height: 400px;
         background-image: url(../assets/img/footer-bg.jpg);
 
         &-container {
-            // @include flex(row, space-between, center);
+            height: 400px;
             display: flex;
             color: $fourth_color;
             
@@ -160,14 +159,13 @@ export default {
                 }
 
                 a {
-                    color: grey;
+                    color: $third_color;
                     font-size: .7rem;
                }
             }
            
             &-logo {
             object-fit: cover;
-            position: relative;
             left: 65%;
             bottom: 100px;
             }
