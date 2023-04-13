@@ -18,7 +18,7 @@ export default {
 
     main {
         width: 100%;
-        height: 200px;
+        height: 100px;
         padding: 20px 0;
         background-color: $secondary_color;
         color: $fourth_color;

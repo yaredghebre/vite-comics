@@ -88,11 +88,11 @@ export default {
         }
 
         .header-logo-box {
-            width: 70px;
-            height: 70px;;
+            width: 30%;
         }
 
         .header-links {
+            width: 70%;
             display: flex;
             align-items: end;
             gap: 50px;
