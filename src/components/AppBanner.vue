@@ -35,7 +35,10 @@ export default {
     <section class="banner-container ">
         <div class="banner-row container">
             <div class="banner-card" v-for="card in cards">
-                <img :src="card.image">
+                <div class="banner-box">
+                    <img :src="card.image">
+                </div>
+                
                 <span> {{ card.text }}</span>
             </div>
         </div>
@@ -47,21 +50,33 @@ export default {
 @use "../style/partials/variables" as *;
 
     .banner-container {
-        height: 200px;
+        height: 100px;
         color: $fourth_color;
         background-color: $primary_color;
         @include flex(row, space-between, center);
+        z-index: 100;
+        position: relative;
 
         .banner-row {
             height: 100px;
             @include flex(row, space-between, center);
 
             .banner-card {
-                width: 50px;
+                // width: 50px;
                 display: flex;
                 align-items: center;
-                gap: 20px;
+                gap: 10px;
                 font-size: 0.8rem;
+
+                .banner-box {
+                    width: 50px;
+                    height: 50px;
+
+                    img {
+                        height: 100%;
+                        max-width: 100%;
+                    }
+                }
             }
         }
     }

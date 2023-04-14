@@ -88,7 +88,9 @@ export default {
         }
 
         .header-logo-box {
-            width: 30%;
+            // width: 30%;
+            width: 70px;
+            height: 70px;
         }
 
         .header-links {
@@ -102,7 +104,7 @@ export default {
                 a:hover:after {
                     content: "";
                     display: block;
-                    height: 3px;
+                    height: 5px;
                     background-color: $primary_color;
                     position: relative;
                     top: 35px;

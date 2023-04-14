@@ -142,16 +142,17 @@ export default {
 
     .call-to-action {
         background-image: url(../assets/img/footer-bg.jpg);
+        width: 100%;
 
         &-container {
-            height: 400px;
+            height: 350px;
             display: flex;
             color: $fourth_color;
             
             &-links {
                 padding: 30px 0;
                 display: flex;
-                width: 100%;
+                width: 50%;
                 gap: 20px;
 
                 &-list {
@@ -166,8 +167,7 @@ export default {
            
             &-logo {
             object-fit: cover;
-            left: 65%;
-            bottom: 100px;
+            width: 50%;
             }
         }
 

@@ -80,6 +80,8 @@ export default {
 
         .footer-container {
             @include flex(row, space-between, center);
+            // z-index: 100;
+            // position: relative;
 
             &-button {
                 width: 100%;
