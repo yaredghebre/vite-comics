@@ -9,19 +9,19 @@ export default {
                     url: "#"
                 },
                 {
-                    img: "footer-twitter.png",
+                    img: "src/assets/img/footer-twitter.png",
                     url: "#"
                 },
                 {
-                    img: "footer-youtube.png",
+                    img: "src/assets/img/footer-youtube.png",
                     url: "#"
                 },
                 {
-                    img: "footer-pinterest.png",
+                    img: "src/assets/img/footer-pinterest.png",
                     url: "#"
                 },
                 {
-                    img: "footer-periscope.png",
+                    img: "src/assets/img/footer-periscope.png",
                     url: "#"
                 },
             ]
@@ -39,10 +39,12 @@ export default {
     <footer>
         <div class="footer-container container">
             <div class="footer-container-button">
-                <a href="">SIGN-UP NOW!</a>
+                <div class="sign-up-btn">
+                    <a href="">SIGN-UP NOW!</a>
+                </div>
                 <div class="footer-container-button-icons">
                     <a href="">FOLLOW US!</a>
-                    <ul>
+                    <ul class="list">
                         <li v-for="icon in icons">
                             <a :href="icon.url">
                                 <img :src="icon.img" alt="">
@@ -73,9 +75,8 @@ export default {
 
     footer {
         width: 100%;
-        height: 500px;
         padding: 20px 0;
-        background-color: $third_color;
+        background-color: rgba(0, 0, 0, 0.743);
 
         .footer-container {
             @include flex(row, space-between, center);
@@ -83,6 +84,23 @@ export default {
             &-button {
                 width: 100%;
                 @include flex(row, space-between, center);
+                color: white;
+
+                .sign-up-btn {
+                    border: 2px solid $primary_color;
+                    padding: 5px;
+                }
+
+                &-icons {
+                    @include flex(row, space-between, center);
+                    color: $primary_color;
+                    gap: 20px;
+
+                    .list {
+                        display: flex;
+                        gap: 20px;
+                    }
+                }
             }
 
         }
