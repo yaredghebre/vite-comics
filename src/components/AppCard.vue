@@ -23,16 +23,15 @@ export default {
             width: calc(100% / 6 - 20px);
             height: calc(100% / 6 - 20px);
     
-
             img {
                 height: 200px;
                 width: 200px;
             }
 
-            h2 {
+            h3 {
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 0.7rem;
-                text-align: center;
+                font-size: 0.8rem;
+                font-weight: 300;
             }
     
         }

@@ -12,7 +12,7 @@ export default {
                 {
                     text: "COMICS",
                     url: "#",
-                    current: false,
+                    current: true,
                 },
                 {
                     text: "MOVIES",

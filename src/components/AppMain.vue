@@ -90,7 +90,7 @@ export default {
 <template>
     <main>
         <div class="main-container container">
-            <AppCard v-for="(item, index) in cards" :key="index" :image="item.thumb" :title="item.series"/>  
+            <AppCard v-for="(item, index) in cards" :key="index" :image="item.thumb" :title="item.series.toUpperCase()"/>  
             <button class="main-container-button"> LOAD MORE</button>
         </div>
     </main>
@@ -120,9 +120,13 @@ export default {
                 left: 50%;
                 transform: translateX(-50%);
                 padding: 10px 20px;
-                text-align: center;
                 cursor: pointer;
                 border-radius: 5px;
+                color: $fourth_color;
+                font-family: 'Oswald', sans-serif;
+                font-size: 1.2rem;
+                font-weight: 300;
+
             }
 
         }
