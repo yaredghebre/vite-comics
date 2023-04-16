@@ -91,7 +91,6 @@ export default {
     <main>
         <div class="main-container container">
             <AppCard v-for="(item, index) in cards" :key="index" :image="item.thumb" :title="item.series"/>  
-
             <button class="main-container-button"> LOAD MORE</button>
         </div>
     </main>
@@ -112,8 +111,6 @@ export default {
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
-            
-            
             gap: 20px;
 
             &-button {
