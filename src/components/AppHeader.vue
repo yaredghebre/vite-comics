@@ -100,14 +100,17 @@ export default {
             gap: 50px;
 
             li {
-                
+                position: relative;
+
                 a:hover:after {
                     content: "";
                     display: block;
                     height: 5px;
+                    width: 100%;
                     background-color: $primary_color;
-                    position: relative;
-                    top: 35px;
+                    position: absolute;
+                    bottom: -38px;
+                    left: 0;
                 }
 
                 &.active,
